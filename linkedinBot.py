@@ -27,7 +27,7 @@ WebDriverWait(driver,10).until(EC.presence_of_element_located((By.XPATH,"/html/b
 driver.get('https://www.linkedin.com/mynetwork/')
 time.sleep(5)
 
-#scroll to 1/8-350 to make that element clickable
+#scroll to total_height/8-350 to make that element clickable
 driver.execute_script("window.scrollTo(0, document.body.scrollHeight/8-350);")
 driver.find_element_by_xpath("/html/body/div[8]/div[5]/div/div/div/div/div/div/ul/li[2]/div/button").click()
 time.sleep(3)
